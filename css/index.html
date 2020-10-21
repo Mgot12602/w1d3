@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- styles inline X -->
+    <style>
+      .menu {
+        transform: translateX(-1000px);
+      }
+      h1 {
+        background-color: black;
+        width: 50vw;
+        transition: all 2s ease-in;
+        /* transition-delay: 1s;
+        transition-property: all;
+        transition-timing-function: ease-out; */
+      }
+
+      h1:hover {
+        /* transform: translateY(200px); */
+        transform: rotate(1800deg);
+        /* transform: scale(1.2); */
+        /* background-color: red;
+        width: 100vw;
+        padding: 5px;
+        border: 10px green dotted; */
+      }
+
+      h1:active {
+        background-color: blue;
+        width: 10vw;
+      }
+
+      nav {
+        transition: all 1s ease-in;
+      }
+
+      .circle {
+        height: 100px;
+        width: 100px;
+        background-color: seagreen;
+        border-radius: 50%;
+        margin: 100px auto 30px;
+        animation-name: jumpAround;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      nav:hover {
+        margin-bottom: 100px;
+      }
+
+      @keyframes jumpAround {
+        0% {
+          background-color: blue;
+          transform: translateY(0);
+        }
+
+        50% {
+          background-color: green;
+          transform: translateY(100px);
+        }
+
+        100% {
+          background-color: brown;
+          transform: translateY(150px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h3>Milena</h3>
+      </div>
+      <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="menu">MENU</div>
+
+    <h1>Simba</h1>
+
+    <div class="circle"></div>
+  </body>
+</html>
